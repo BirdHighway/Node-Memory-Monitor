@@ -5,12 +5,12 @@ const formatters = require('./formatters');
 
 class Monitor {
 
-  constructor(separator = ',') {
-    this.SEPARATOR = separator;
+  constructor(options) {
+    this.SEPARATOR = options && options.separator ? options.separator : ',';
   }
 
   startMonitor(tracker, interval = 1000) {
-    setInterval(() => {
+    return setInterval(() => {
       tracker();
     }, interval);
   }
@@ -66,3 +66,4 @@ class Monitor {
 
 }
 
+module.exports = Monitor;

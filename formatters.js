@@ -21,7 +21,6 @@ const formatSingleBar = (max, name, bytes) => {
   const nameFormatted = name.padStart(12, ' ');
   const megabytes = bytes / 1024 / 1024;
   const megabytesFormatted = formatBytes(bytes).padStart(6, ' ');
-  // console.log('    ' + megabytesFormatted);
   const fraction = megabytes / max;
   const hashesCount = Math.round(fraction * 100);
   const hashes = ('#').repeat(hashesCount);
