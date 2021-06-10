@@ -4,6 +4,8 @@ A simple way to monitor node memory usage.
 
 ![Logging Bar Graph to Console](https://github.com/BirdHighway/Node-Memory-Monitor/blob/master/images/console-log-example.png)
 
+Image above shows logging values of rss and heapTotal to the console in bar graph form.
+
 ## Supported Formatters
 * CSV - Monitor.createFormatterCSV()
 * JSON - Monitor.createFormatterJSON()
@@ -47,3 +49,6 @@ const intervalId = monitor.startMonitor(tracker, interval);
 clearInterval(intervalId);
 
 ```
+
+## Monitoring a File Log
+When using the file logger you can monitor the file change in real time by running `tail -f fileName`
