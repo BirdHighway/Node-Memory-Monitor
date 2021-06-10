@@ -2,6 +2,8 @@
 
 A simple way to monitor node memory usage.
 
+![Logging Bar Graph to Console](https://github.com/BirdHighway/Node-Memory-Monitor/images/console-log-example.png)
+
 ## Supported Formatters
 * CSV - Monitor.createFormatterCSV()
 * JSON - Monitor.createFormatterJSON()
